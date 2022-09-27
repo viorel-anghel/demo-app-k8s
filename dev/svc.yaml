@@ -1,0 +1,13 @@
+# service example
+apiVersion: v1
+kind: Service
+metadata:
+  name: demo-app
+  namespace: demo-app-dev
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: demo-app
+
